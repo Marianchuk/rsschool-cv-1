@@ -1,8 +1,143 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+ }
+
+ body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+html {
+    scroll-behavior: smooth; 
+ }
+ 
+header {
+    margin-bottom: 10px;
 }
 
-aside {
-    width: 40%;
-    float: right;
+section {
+    margin: 15px;
+  }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+  }
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+    margin: 0 auto;
+    
+}
+.flex-container-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+nav ul *,
+#myProject ul *  {
+    text-decoration: none;
+    color: black;
+    font-size: bold;
+    list-style: none;
+}
+
+a:hover {
+    color: cornflowerblue;
+         
+}
+
+footer div {
+    background-color: lightblue;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+footer p {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+nav ul {
+    background-color: lightblue;
+    min-height: 6vh;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+            
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+#code {
+    border-top: solid;
+    border-bottom: solid;
+    margin: 25px 0;
+    
+}
+
+#certification a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(152, 189, 201);
+    border: black solid;
+    padding: 10px;
+}
+#aboutMe {
+    max-width: 60%;
+    line-height: 25px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+h3 {
+    margin: 7px;
+}
+
+#myProject li {
+    text-align: center;
+    align-items: center;
+}
+
+.project * {
+    background-color: rgb(159, 248, 248);
+    padding: 10px;
+    border-radius: 7px;
+    
+}
+
+span {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1366px) {
+    #myProject .flex-container {
+        
+        flex-direction: column;
+    }
+    .flex-container-main {
+        flex-direction: column;
+    }
+    nav .flex-container {
+        flex-direction: column;
+        
+    }
+     
 }
