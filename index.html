@@ -4,106 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" href="assets/svg/logo-js.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Open+Sans:wght@500&family=Playfair+Display:wght@900&family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>cv</title>
 </head>
 <body>
     <header>
-        <h2>Svitlana Marianchuk</h2>
-        <img src="https://i.postimg.cc/k4KTh9DW/foto.jpg" width=200 alt="my foto">
-        <h1>Trainee JavaScript Developer</h1>
-        <p>I am a very purposeful person. I am interested in the frontend developing. I
+        <nav>
+            <ul class="flex-container">
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contactme">Contacts</a></li>
+                <li><a href="#myProject">My project</a></li>
+            </ul>
+        </nav>
+        <article class="flex-container container">
+            <div id="aboutMe">
+                <h2>Svitlana Marianchuk</h2>
+                <h1>Trainee JavaScript Developer</h1>
+                <p>I am a very purposeful person. I am interested in the frontend developing. I
         have just started my way in developing but I already know HTML, CSS and
         Fundamentals of JS. I will be happy to continue my studying and developing in
         your company.</p>
+            </div>
+            <img src="https://i.postimg.cc/k4KTh9DW/foto.jpg" width=200 alt="my foto">
+        </article>
     </header>
-    <main>
+    <main class="flex-container-main">
+        <div class="container">
+            <section id="myProject">
+                <h3>My projects</h3>
+                <ul class="flex-container project">
+                    <li><a href="https://marianchuk.github.io/flex/">Flex</a></li>
+                    <li><a href="https://marianchuk.github.io/08-to-do-list">To DO list</a></li>
+                    <li><a href="https://marianchuk.github.io/7-progress-steps/">Progress steps</a></li>
+                    <li><a href="https://marianchuk.github.io/03_slider/">Slider</a></li>
+                    <li><a href="https://marianchuk.github.io/02_drag_and_drop/">Drag and Drop</a></li>
+                    <li><a href="https://marianchuk.github.io/01_gallery_of_cards/">Gallery</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Employment history</h3>
+                <h4 id="education">Full time studying</h4>
+                <ul>
+                    <li><span>Student, RS Scholl</span><br>
+                            JS/Frontend<br>
+                            Des, 2021 - now</li>
+                    <li><span>Student, SoftServe</span><br>
+                            HTML5, CSS3, Bootstrap<br>
+                            Sep, 2021 - Des, 2021</li>
+                </ul>
+                <h4>Full time job</h4>
+                <ul>
+                    <li><span>Senior Talent Sourcing Consultant, Ciklum</span><br>
+                            Nov, 2019 – Aug, 2021</li>
+                </ul>
+                
+            </section>
+            <section id="code">
+                <h4>My Code</h4>
+                <pre>
+                   <code>
+                    function hero(bullets, dragons) {
+                        let shots = bullets / dragons;
+                        if (shots < 2) {
+                            return false;
+                            } else {
+                                return true;
+                            }
+                        }
+                    </code>
+                </pre>
+            </section>
+            
+        </div>
         <aside>
             <section>
                 <h4>Links:</h4>
-                <a href="https://www.linkedin.com/in/svitlana-marianchuk-026165180/">LinkedIn</a><br>
-                <a href="https://github.com/Marianchuk">GitHub</a>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/svitlana-marianchuk-026165180/">LinkedIn</a></li>
+                        <li><a href="https://github.com/Marianchuk">GitHub</a></li>
+                    </ul>
             </section>
             <section>
-                <h4>Details:</h4>
-                <p>+380673236949<br>
-                marianchuksv@gmail.com</p>
+                <h4 id="contactme">Details:</h4>
+                <ul>
+                    <li>Discord: Svitlana Marianchuk#8340</li>
+                    <li>Telegram: +380673236949</li>
+                    <li>E-mail: marianchuksv@gmail.com</li>
+                </ul>
             </section>
             <section>
-                <h4>Skills</h4>
-                <p>HTML<br>
-                CSS<br>
-                JS
-                </p>
+                <h4 id="skills">Skills:</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>GIT</li>
+                    <li>Github</li>
+                </ul>
             </section>
             <section>
-                <h4>Languages</h4>
+                <h4>Languages:</h4>
                 <p>English – Strong Intermediate</p>
             </section>
             <section>
-                <h4>Hobbies</h4>
+                <h4>Hobbies:</h4>
                 <p>Cycling, painting, hiking</p>
             </section>
+            <section id="education">
+                <h4>Education</h4>
+                <ul>
+                    <li>RS Scholl: JS, Frontend</li>
+                    <li>SoftServe:</br>HTML, CSS, JS</li>
+                    <li><a href="https://drive.google.com/file/d/1Mt_akBbNP8DV3ca5F1RT58cfJbQBb33A/view?usp=sharing">HTML CERTIFICATE</a></li>
+                </ul>
+            </section>
         </aside>
-        <article>
-            <h3>My projects</h3>
-            <a href="https://marianchuk.github.io/08-to-do-list">To DO list</a><br>
-            <a href="https://marianchuk.github.io/7-progress-steps/">Progress steps</a><br>
-            <a href="https://marianchuk.github.io/06_mobile-nav-toggle/">Nav toggle</a><br>
-            <a href="https://marianchuk.github.io/03_slider/">Slider</a><br>
-            <a href="https://marianchuk.github.io/02_drag_and_drop/">Drag and Drop</a><br>
-            <a href="https://marianchuk.github.io/01_gallery_of_cards/">Gallery</a><br>
-        </article>
-        <article>
-            <h3>Employment history</h3>
-            <ul>
-                <li>
-                    <p>Full time studying</p>
-                </li>
-                <ul>
-                    <li>
-                        <p>Student, RS Scholl<br>
-                        JS/Frontend<br>
-                        Des, 2021 - now
-                        </p>
-                    </li>
-                    <li>
-                        <p>Student, SoftServe<br>
-                        HTML5, CSS3, Bootstrap<br>
-                        Sep, 2021 - Des, 2021
-                        </p>
-                    </li>
-                </ul>
-                <li>
-                    <p>Full time job</p>
-                </li>
-                <ul>
-                    <li>
-                        <p>Senior Talent Sourcing Consultant, Ciklum<br>
-                        Nov, 2019 – Aug, 2021</p>
-                    </li>
-                </ul>
-            </ul>
-        </article>
-        <article>
-            <h4>My Code</h4>
-            <code>
-                function hero(bullets, dragons) {<br>
-                let shots = bullets / dragons;<br>
-                if (shots < 2) {<br>
-                    return false;<br>
-                } else {<br>
-                    return true;<br>
-                }<br>
-                }<br>
-            </code>
-        </article>
-
     </main>
-    
     <footer>
-        <a href="https://drive.google.com/file/d/1Mt_akBbNP8DV3ca5F1RT58cfJbQBb33A/view?usp=sharing">Certificat</a>
+        <div class="flex-container">
+            <p>2021</p>
+            <a href="https://github.com/Marianchuk"><img width="90" src="assets/img/github.png"></a>
+            <a href="https://community-z.com/events/js-stage0-rss-2021q4"><img src="assets/svg/logo_rs_text.svg"></a>
+        </div>
     </footer>
 </body>
 </html>
-    
