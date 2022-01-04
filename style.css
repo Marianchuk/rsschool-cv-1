@@ -13,7 +13,25 @@
     min-width: 320px;
     min-height: 100vh;
   }
-
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 5px auto;
+}
+.contactme * {
+    list-style: none;
+}
+aside h4 {
+    background-color: cadetblue;
+    padding: 3px;
+    margin: 5px 0;
+    text-align: center;
+}
+ul li {
+    margin-left: 5px;
+}
 html {
     scroll-behavior: smooth; 
  }
@@ -32,6 +50,8 @@ section {
     min-height: 50px;
   }
 
+ 
+
 .flex-container {
     display: flex;
     justify-content: space-around;
@@ -43,19 +63,47 @@ section {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    gap: 2rem;
+    
+}
+#myProject {
+    background-color: rgb(241, 238, 238);
+    border-left: 2px black solid;
+    padding: 7px;
     
 }
 
 nav ul *,
 #myProject ul *  {
     text-decoration: none;
-    /* color: black; */
     font-size: bold;
     list-style: none;
+    
+}
+
+#myProject li {
+    text-align: center;
+    align-items: center;
+}
+.project * {
+   color:black;
+    border: none;
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: 1s;
+
+    
+}
+.project *:hover {
+    color: rgb(60, 127, 253);
+    left: 4px;
+    top: -4px;
+    
 }
 
 a:hover {
-    color: cornflowerblue;
+    color: rgb(60, 127, 253);
          
 }
 main {
@@ -116,38 +164,16 @@ h3 {
     margin: 7px;
 }
 
-#myProject li {
-    text-align: center;
-    align-items: center;
-}
 
 
-.project * {
-   
-    border: none;
-    position: relative;
-    left: 0;
-    top: 0;
-    transition: 1s;
 
-    
-}
-.project *:hover {
-    color: aqua;
-    left: 4px;
-    top: -4px;
-    box-shadow: 0 0 0 #000;
-}
 
 span {
     text-decoration: underline;
 }
 
 @media screen and (max-width: 1000px) {
-    #myProject .flex-container {
-        
-        flex-direction: column;
-    }
+   
     .flex-container-main {
         flex-direction: column;
     }
@@ -158,6 +184,10 @@ span {
 nav .flex-container {
     flex-wrap: wrap;
     
+}
+#myProject .flex-container {
+        
+    flex-direction: column;
 }
 }
 
