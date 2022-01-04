@@ -58,10 +58,14 @@ a:hover {
     color: cornflowerblue;
          
 }
+main {
+    margin-bottom: 10px;
+}
+
 
 footer div {
     background-color: lightblue;
-    padding: 20px;
+    padding: 5px;
     align-items: center;
     
 }
