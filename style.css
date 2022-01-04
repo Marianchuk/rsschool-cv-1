@@ -176,6 +176,7 @@ span {
    
     .flex-container-main {
         flex-direction: column;
+        transition: 3s;
     }
    
      
@@ -183,11 +184,13 @@ span {
 @media screen and (max-width: 640px) {
 nav .flex-container {
     flex-wrap: wrap;
+    transition: 3s;
     
 }
 #myProject .flex-container {
         
     flex-direction: column;
+    transition: 3s;
 }
 }
 
@@ -200,5 +203,6 @@ nav .flex-container {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        transition: 3s;
     }
     }
