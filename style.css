@@ -63,6 +63,7 @@ main {
 }
 
 
+
 footer div {
     background-color: lightblue;
     padding: 5px;
@@ -142,7 +143,7 @@ span {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1000px) {
     #myProject .flex-container {
         
         flex-direction: column;
@@ -150,9 +151,24 @@ span {
     .flex-container-main {
         flex-direction: column;
     }
-    nav .flex-container {
-        flex-direction: column;
-        
-    }
+   
      
 }
+@media screen and (max-width: 640px) {
+nav .flex-container {
+    flex-wrap: wrap;
+    
+}
+}
+
+@media screen and (max-width: 470px) {
+    #code {
+        display: none;
+        
+    }
+    header article {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    }
