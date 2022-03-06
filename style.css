@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+ }
+ 
+ body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 5px auto;
+}
+.contactme * {
+    list-style: none;
+}
+aside h4 {
+    background-color: cadetblue;
+    padding: 3px;
+    margin: 5px 0;
+    text-align: center;
+}
+ul li {
+    margin-left: 5px;
+}
+html {
+    scroll-behavior: smooth; 
+ }
+ 
+header {
+    margin-bottom: 10px;
+}
+
+section {
+    margin: 15px;
+  }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+  }
+
+ 
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+    margin: 0 auto;
+    
+}
+.flex-container-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 2rem;
+    
+}
+#myProject {
+    background-color: rgb(241, 238, 238);
+    border-left: 2px black solid;
+    padding: 7px;
+    
+}
+
+nav ul *,
+#myProject ul *  {
+    text-decoration: none;
+    font-weight: bold;
+    list-style: none;
+    
+}
+
+#myProject li {
+    text-align: center;
+    align-items: center;
+}
+.project * {
+   color:black;
+    border: none;
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: 1s;
+
+    
+}
+.project *:hover {
+    color: rgb(60, 127, 253);
+    left: 4px;
+    top: -4px;
+    
+}
+
+a:hover {
+    color: rgb(60, 127, 253);
+         
+}
+main {
+    margin-bottom: 10px;
+}
+
+
+
+footer div {
+    background-color: lightblue;
+    padding: 5px;
+    align-items: center;
+    
+}
+
+footer p {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+nav ul {
+    background-color: lightblue;
+    min-height: 6vh;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+            
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+#code {
+    border-top: solid;
+    border-bottom: solid;
+    margin: 25px 0;
+    
+}
+
+#certification a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(152, 189, 201);
+    border: black solid;
+    padding: 10px;
+}
+#aboutMe {
+    max-width: 60%;
+    line-height: 25px;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+h3 {
+    margin: 7px;
+}
+
+
+
+
+
+span {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+   
+    .flex-container-main {
+        flex-direction: column;
+        transition: 3s;
+    }
+   
+     
+}
+@media screen and (max-width: 640px) {
+nav .flex-container {
+    flex-wrap: wrap;
+    transition: 3s;
+    
+}
+#myProject .flex-container {
+        
+    flex-direction: column;
+    transition: 3s;
+}
+}
+
+@media screen and (max-width: 470px) {
+    #code {
+        display: none;
+        
+    }
+    header article {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        transition: 3s;
+    }
+    }
