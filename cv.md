@@ -24,7 +24,8 @@ your company.
 [Nav toggle](https://marianchuk.github.io/06_mobile-nav-toggle/)\
 [Slider](https://marianchuk.github.io/03_slider/)\
 [Drag and Drop](https://marianchuk.github.io/02_drag_and_drop/)\
-[Gallery](https://marianchuk.github.io/01_gallery_of_cards/)\
+[Gallery](https://marianchuk.github.io/01_gallery_of_cards/)
+
 ***
 ## Employment history
 Full time studying
